@@ -1,3 +1,53 @@
+# Quick Start
+
+## 前置环境条件
+
+- 已安装 [Git](https://git-scm.com/)
+- 已安装 [Node.js](https://nodejs.org/)（建议使用 nvm 管理 Node 版本）
+- 已安装 [nvm](https://github.com/nvm-sh/nvm)（Node 版本管理工具）
+- 网络可访问 npm/yarn 仓库
+
+## 安装与启动步骤
+
+1. 克隆项目代码, 并切换到项目目录
+
+```bash
+git clone https://github.com/goodpeanuts/Clean-Architecture-zh.git && cd Clean-Architecture-zh
+```
+
+2. 安装 Node.js 16 版本
+
+Node 17+ 默认启用了 OpenSSL 3.0，某些加密算法默认被禁用，而 Webpack 4 及其依赖的某些包还没适配 OpenSSL 3.0，导致构建时报错
+
+```bash
+nvm install 16
+```
+
+3. 切换到 Node.js 16 版本
+
+```bash
+nvm use 16
+```
+
+4. 全局安装 yarn 包管理器
+
+```bash
+npm install -g yarn
+```
+
+5. 安装项目依赖
+
+```bash
+yarn install
+```
+
+6. 启动本地文档开发服务器
+
+```bash
+yarn docs:dev
+```
+
+
 # Clean-Architecture-zh
 
 《架构整洁之道》中文翻译
